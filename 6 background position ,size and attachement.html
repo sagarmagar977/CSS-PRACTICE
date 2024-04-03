@@ -18,51 +18,71 @@
             if we use "no-repeat" then the image will not be repeated but
             if we use "repeat-x" then it will be repeated in x-axis only and
             if we use "repeat-y" then it will be repeated in y-axis only*/
+            /* */
             background-image: url("1.PNG");
             background-repeat: no-repeat;
         }
         
         .bg2 {
             width: 800px;
-            height: 400px;
+            height: 500px;
             border: 2px solid black;
             font-size: 30px;
             color: rgb(93, 93, 156);
             padding: 20px;
             margin: auto;
-            /*  
-            if we use "repeat-x" then it will be repeated in x-axis only
-            */
-            background-image: url("2.PNG");
-            background-repeat: repeat-x;
+            /*  */
+            /*  There is a short cut method for  background component
+             in whcih  we can write all of them in one line or one code */
+            background: url("2.PNG") no-repeat left;
         }
         
         .bg3 {
             width: 800px;
-            height: 400px;
+            height: 500px;
             border: 2px solid black;
             font-size: 30px;
             color: rgb(93, 93, 156);
             padding: 20px;
             margin: auto;
-            /*  
-            if we use "repeat-y" then it will be repeated in y-axis only*/
-            background-image: url("2.PNG");
-            background-repeat: repeat-y;
+            /*  */
+            /*  There is a short cut method for  background component
+             in whcih  we can write all of them in one line or one code 
+             and we have to use the code " background" 
+             */
+            background: url("2.PNG") no-repeat right;
         }
         
         .bg4 {
             width: 800px;
-            height: 400px;
+            height: 500px;
             border: 2px solid black;
             font-size: 30px;
-            color: rgb(10, 10, 10);
+            color: rgb(93, 93, 156);
             padding: 20px;
             margin: auto;
-            /* 
-            There is also short-hand property 
-            in which we can use all in same "background" */
-            background: url("2.PNG") no-repeat;
+            /*  */
+            /*  There is a short cut method for  background component
+             in whcih  we can write all of them in one line or one code 
+             and we have to use the code " background" 
+             */
+            background: url("2.PNG") no-repeat top right;
+        }
+        
+        .bg5 {
+            width: 800px;
+            height: 500px;
+            border: 2px solid black;
+            font-size: 30px;
+            color: rgb(93, 93, 156);
+            padding: 20px;
+            margin: auto;
+            /*  */
+            /*  There is a short cut method for  background component
+             in whcih  we can write all of them in one line or one code 
+             and we have to use the code " background" 
+             */
+            background: url("2.PNG") no-repeat bottom right;
         }
     </style>
 </head>
@@ -96,6 +116,19 @@
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque maxime pariatur cum explicabo eum incidunt, id necessitatibus dignissimos accusamus, eligendi aut quidem illum, sapiente provident autem non nobis delectus. Molestias!
 
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="bg5">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque maxime pariatur cum explicabo eum incidunt, id necessitatibus dignissimos accusamus, eligendi aut quidem illum, sapiente provident autem non nobis delectus. Molestias!
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
 
 </body>
 
