@@ -4,10 +4,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Margin properties</title>
+    <style>
+        .main {
+            border: 5px solid red;
+            width: 300px;
+            height: 300px;
+            border-radius: 150px;
+            ;
+        }
+        
+        .text {
+            border: 5px dotted blue;
+            width: 280px;
+            height: 275px;
+            margin: 5px;
+            margin-top: 10px;
+            text-align: center;
+            border-radius: 150px;
+            /*  margin is of four types : top-right-botom-left
+            and if we want to use margin of all side all together then we have to use
+            maegin : 15px 10px 15px 10px ; it will be applies like clockwise from top to
+            right  to bottom to left
+            */
+        }
+        
+        .main2 {
+            border: 4px solid blue;
+            height: 300px;
+            width: 300px;
+            border-radius: 80px;
+        }
+        
+        .text2 {
+            border: 4px dotted blue;
+            height: 277px;
+            width: 284px;
+            border-radius: 80px;
+            margin: 10px 4px 10px 4px;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
+    <div class="main">
+
+        <div class="text">
+            hello
+
+        </div>
+
+    </div>
+    <br>
+    <br>
+    <div class="main2">
+        <div class="text2">
+
+            hello world !
+
+        </div>
+
+    </div>
 
 </body>
 
