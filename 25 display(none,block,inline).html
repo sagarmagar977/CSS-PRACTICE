@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display(none,block,inline)</title>
+    <style>
+        .main1 {
+            border: red solid 3px;
+            padding: 10px;
+        }
+        
+        .main2 {
+            border: red solid 3px;
+            padding: 10px;
+        }
+        
+        .h2custom1 {
+            text-align: center;
+        }
+        
+        .h2custom2 {
+            text-align: center;
+        }
+        /* when using built-in keywords/component ,we dont use "." for styling them */
+        /* <h1> use "display:block;" */
+        
+        h1 {
+            color: aquamarine;
+            display: block;
+        }
+        /* <span> use "display:inline;" */
+        
+        span {
+            color: blue;
+            display: inline;
+        }
+        
+        p {
+            color: brown;
+        }
+        /* CUSTOM DISPLAY VALUES  (EDITED)*/
+        
+        .main2 h1 {
+            display: inline;
+        }
+        
+        .main2 span {
+            display: block;
+        }
+        
+        .main2 h3 {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main1">
+        <h2 class="h2custom1"> this is default display values </h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ut ipsa saepe, autem nobis accusantium nihil beatae minima amet, aperiam expedita quidem magni esse ipsam ab nulla! Aspernatur, optio beatae.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ut ipsa saepe, autem nobis accusantium nihil beatae minima amet, aperiam expedita quidem magni esse ipsam ab nulla! Aspernatur, optio beatae.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet
+            <h1> hello </h1>consectetur adipisicing elit. Veniam ut ipsa saepe, autem nobis accusantium nihil beatae minima amet, aperiam expedita quidem magni esse ipsam ab nulla! Aspernatur, optio beatae.
+        </p>
+
+
+        <p>
+            Lorem ipsum dolor sit <span> this is span</span> amet consectetur adipisicing elit. Veniam ut ipsa saepe, autem nobis accusantium nihil beatae minima amet, aperiam expedita quidem magni esse ipsam ab nulla! Aspernatur, optio beatae.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ut ipsa saepe, autem nobis accusantium nihil beatae minima amet, aperiam expedita quidem magni esse ipsam ab nulla! Aspernatur, optio beatae.
+        </p>
+    </div>
+    <br><br><br>
+    <div class="main2">
+        <h2 class="h2custom2"> this is default display with manipulated values </h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ut ipsa saepe, autem nobis accusantium nihil beatae minima amet, aperiam expedita quidem magni esse ipsam ab nulla! Aspernatur, optio beatae.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ut ipsa saepe, autem nobis accusantium nihil beatae minima amet, aperiam expedita quidem magni esse ipsam ab nulla! Aspernatur, optio beatae.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet
+            <h1> hello </h1>consectetur adipisicing elit. Veniam ut ipsa saepe, autem nobis accusantium nihil beatae minima amet, aperiam expedita quidem magni esse ipsam ab nulla! Aspernatur, optio beatae.
+        </p>
+
+
+        <p>
+            Lorem ipsum dolor sit <span> this is span</span> amet consectetur adipisicing elit. Veniam ut ipsa saepe, autem nobis accusantium nihil beatae minima amet, aperiam expedita quidem magni esse ipsam ab nulla! Aspernatur, optio beatae.
+        </p>
+        <p>
+            <h3> hello </h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ut ipsa saepe, autem nobis accusantium nihil beatae minima amet, aperiam expedita quidem magni esse ipsam ab nulla! Aspernatur, optio beatae.
+        </p>
+    </div>
+</body>
+
+</html>

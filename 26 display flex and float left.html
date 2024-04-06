@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex and float</title>
+    <style>
+        .main1 {
+            height: 200px;
+            width: 700px;
+            margin: auto;
+            border: red solid 3px;
+            padding: 20px;
+            /* flex brings all emelents in one row*/
+            display: flex;
+        }
+        /* psuedo-class */
+        
+        .main1 div {
+            text-align: center;
+            border: black solid 2px;
+            height: 50px;
+            width: 50px;
+        }
+        /* float */
+        
+        .main2 {
+            height: 200px;
+            width: 700px;
+            margin: auto;
+            border: red solid 3px;
+            padding: 20px;
+        }
+        /* psuedo-style */
+        
+        .main2 div {
+            text-align: center;
+            border: black solid 2px;
+            height: 50px;
+            width: 50px;
+            float: left;
+        }
+        
+        .h22 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 class="h22"> it shows use of "display:flex;"
+        <div class="main1">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+            <br><br><br><br>
+
+        </div>
+        <br><br><br><br><br>
+        <h2 class="h22"> it shows use of "float:left;"
+            <div class="main2">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>10</div>
+                <div>11</div>
+                <div>12</div>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+
+                <br><br><br>
+                <br><br><br>
+
+            </div>
+</body>
+
+</html>
