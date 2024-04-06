@@ -6,19 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>keyframes/animation</title>
     <style>
-        .main {
+        .main1 {
             width: 500px;
             height: 500px;
-            margin: auto;
+            margin-left: 20px;
+            margin-right: 20px;
             border: black solid 5px;
             position: relative;
             border-radius: 20px;
             padding: 10px;
             background-image: url("1.png");
             background-size: cover;
+            float: left;
         }
         
-        .box {
+        .box1 {
             height: 200px;
             width: 200px;
             border: black solid 5px;
@@ -26,14 +28,79 @@
             position: absolute;
             top: 10px;
             left: 10px;
-            animation-name: dabba;
+            animation-name: dabba1;
             animation-duration: 5s;
             background-color: red;
             animation-delay: 1s;
             animation-iteration-count: infinite;
+            animation-fill-mode: both;
+            /* and it can be : forward and backward */
+            animation-direction: reverse;
+            /* and it can be "alternate" and "alternate-reverse" and "normal" too */
         }
         
-        @keyframes dabba {
+        @keyframes dabba1 {
+            0% {
+                top: 10px;
+                left: 10px;
+                background-color: red;
+            }
+            25% {
+                top: 10px;
+                left: 290px;
+                background-color: blue;
+            }
+            50% {
+                top: 290px;
+                left: 290px;
+                background-color: aquamarine;
+            }
+            75% {
+                top: 290px;
+                left: 10px;
+                background-color: blueviolet;
+            }
+            100% {
+                top: 10px;
+                left: 10px;
+                background-color: red;
+            }
+        }
+        
+        .main2 {
+            width: 500px;
+            height: 500px;
+            margin-left: 20px;
+            margin-right: 20px;
+            border: black solid 5px;
+            position: relative;
+            border-radius: 20px;
+            padding: 10px;
+            background-image: url("1.png");
+            background-size: cover;
+            float: left;
+        }
+        
+        .box2 {
+            height: 200px;
+            width: 200px;
+            border: black solid 5px;
+            border-radius: 20px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            animation-name: dabba2;
+            animation-duration: 5s;
+            background-color: red;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: both;
+            /* and it can be : forward and backward */
+            animation-direction: normal;
+            /* and it can be "alternate" and "alternate-reverse" and "normal" too */
+        }
+        
+        @keyframes dabba2 {
             0% {
                 top: 10px;
                 left: 10px;
@@ -64,9 +131,17 @@
 </head>
 
 <body>
-    <div class="main">
+    <div class="main1">
 
-        <div class="box">
+        <div class="box1">
+
+        </div>
+
+    </div>
+
+    <div class="main2">
+
+        <div class="box2">
 
         </div>
     </div>
