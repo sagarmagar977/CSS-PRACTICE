@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>opacity | hover |transation </title>
+    <style>
+        .main1 {
+            height: 500px;
+            width: 500px;
+            background-color: rgb(0, 200, 200, 0.8);
+            opacity: 0.3;
+            float: left;
+            padding: 20px;
+            color: aliceblue;
+            font-size: 50px;
+            margin-left: 50px;
+        }
+        
+        .main2 {
+            margin-left: 50px;
+            height: 500px;
+            width: 500px;
+            background-color: rgb(0, 120, 210, 0.8);
+            opacity: 0.8;
+            float: left;
+            padding: 20px;
+            color: aliceblue;
+            font-size: 50px;
+        }
+        
+        .main3 {
+            height: 500px;
+            width: 500px;
+            border-radius: 20px;
+            background-color: rgb(0, 120, 150, 0.8);
+            opacity: 0.8;
+            float: left;
+            padding: 20px;
+            color: aliceblue;
+            font-size: 50px;
+            margin-left: 50px;
+            margin-top: 50px;
+            /*  transation change the timimg of the effects*/
+            transition: 1s;
+        }
+        /*  "hover" helps to apply effects when hover over a  component*/
+        
+        .main3:hover {
+            opacity: 1;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class=" main1">
+        opacity "0.3"
+
+
+    </div>
+
+    <div class=" main2">
+        opacity "0.8"
+
+
+    </div>
+    <div class=" main3">
+        when hover over here, the opacity is changed !
+        and transation  effects works in 1sec.
+
+
+    </div>
+
+</body>
+
+</html>
