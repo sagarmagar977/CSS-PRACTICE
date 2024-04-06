@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display-grid</title>
+    <style>
+        .HH1 {
+            text-align: center;
+        }
+        
+        .main1 {
+            margin: auto;
+            width: 800px;
+            height: 800px;
+            border: black solid 3px;
+            display: grid;
+            grid-template-columns: 100px 100px 100px 100px 100px;
+        }
+        
+        .main1 div {
+            padding: 10px;
+            background-color: aqua;
+            border: black solid 2px;
+        }
+        
+        .main2 {
+            padding: 30px;
+            margin: auto;
+            width: 800px;
+            height: 800px;
+            border: black solid 3px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 30px 30px;
+            /* grid-row-gap: 50px;
+            grid-column-gap: 50px; */
+        }
+        
+        .main2 div {
+            padding: 10px;
+            background-color: aqua;
+            border: black solid 2px;
+        }
+        
+        .main3 {
+            padding: 30px;
+            margin: auto;
+            width: 800px;
+            height: 800px;
+            border: black solid 3px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 30px 30px;
+            /* grid-row-gap: 50px;
+            grid-column-gap: 50px; */
+        }
+        
+        .main3 div {
+            padding: 10px;
+            background-color: aqua;
+            border: black solid 2px;
+        }
+        
+        .div1 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        
+        .div2 {
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class='HH1'> grid with grid-template-column</h1>
+    <div class="main1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+
+
+
+    </div>
+    <br><br><br>
+    <h1 class="HH1"> grid with "grid-row-gap " and 'grid-column-gap" or "grid-gap"</h1>
+    <div class="main2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+
+
+
+    </div>
+    <h1 class="HH1"> grid with "grid-row-start " and "grid-column-start"</h1>
+    <div class="main3">
+        <div class="div1">1</div>
+        <div>2</div>
+        <div class="div2">3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+
+
+
+
+    </div>
+
+
+</body>
+
+</html>
