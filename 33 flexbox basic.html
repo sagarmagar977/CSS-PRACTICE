@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box</title>
+    <style>
+        .main1 {
+            width: 500px;
+            height: 500px;
+            border: black solid 2px;
+            background-color: gray;
+            /* " display:flex; " will make vertical "div" to allign in horizental */
+            display: flex;
+            /*  and  we have to use :
+            " justifu-content" for modify width
+            and
+            "align-items" to modify height 
+
+            
+            
+            */
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+        }
+        
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(206, 218, 28);
+        }
+        
+        .box3 {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(117, 25, 208);
+        }
+        
+        .main2 {
+            width: 500px;
+            height: 500px;
+            border: black solid 2px;
+            background-color: gray;
+            /* " display:flex; " will make vertical "div" to allign in horizental */
+            display: flex;
+            /*  and  we have to use :
+            " justifu-content" for modify width
+            and
+            "align-items" to modify height 
+
+            
+            
+            */
+            justify-content: space-between;
+            align-items: end;
+        }
+        
+        .box4 {
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+        }
+        
+        .box5 {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(206, 218, 28);
+        }
+        
+        .box6 {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(117, 25, 208);
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+<div class="main1">
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</div>
+<br><br><br>
+<div class="main2">
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <div class="box6"></div>
+</div>
+
+</html>
