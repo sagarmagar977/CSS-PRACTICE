@@ -1,0 +1,348 @@
+* {
+    margin: 0px;
+    padding: 10px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.main1 {
+    padding: 10px;
+    width: 1170px;
+    margin: auto;
+    border: black solid 2px;
+    /*  " display:flex;" is used with parent container only */
+    display: flex;
+    /*  "flex-direction: row ;" and it can take value "row-reverse" also */
+    flex-direction: row-reverse;
+    /* "justify-content" take different values :
+    a) center
+    b) end 
+    c) flex-start
+    d) flex-end
+    e) baseline 
+    f) space-between
+    g) space-around
+    */
+    justify-content: space-around;
+    /*  "flex-wrap: wrap " will  move the contentsd from one row to another if there is no space left*/
+    flex-wrap: nowrap;
+}
+
+.box1 {
+    width: 500px;
+    padding: 2px;
+    margin: 2px;
+    border: black solid 2px;
+    background-color: blueviolet;
+}
+
+.box2 {
+    width: 500px;
+    padding: 2px;
+    margin: 2px;
+    border: black solid 2px;
+    background-color: blueviolet;
+}
+
+.box3 {
+    width: 500px;
+    padding: 2px;
+    margin: 2px;
+    border: black solid 2px;
+    background-color: blueviolet;
+}
+
+.box4 {
+    width: 500px;
+    padding: 2px;
+    margin: 2px;
+    border: black solid 2px;
+    background-color: blueviolet;
+}
+
+@media only screen and (min-width:200px) and (max-width:767px) {
+    .main1 {
+        width: 100%;
+        flex-direction: column;
+        /*  it can also take value "clumn-reverse" which reverse the 
+        order of box in mobile device */
+    }
+}
+
+.main2 {
+    padding: 10px;
+    width: 1170px;
+    margin: auto;
+    border: black solid 2px;
+    /*  " display:flex;" is used with parent container only */
+    display: flex;
+    /*  "flex-direction: row ;" and it can take value "row-reverse" also */
+    flex-direction: row;
+    /* "justify-content" take different values :
+    a) center
+    b) end 
+    c) flex-start
+    d) flex-end
+    e) baseline 
+    f) space-between
+    g) space-around
+    */
+    justify-content: space-between;
+    /*  "flex-wrap: wrap " will  move the contentsd from one row to another if there is no space left*/
+    flex-wrap: wrap;
+}
+
+@media only screen and (min-width:200px) and (max-width:767px) {
+    .main2 {
+        width: 100%;
+        flex-direction: column;
+        /*  it can also take value "clumn-reverse" which reverse the 
+        order of box in mobile device */
+    }
+}
+
+.main3 {
+    padding: 10px;
+    width: 1170px;
+    height: 500px;
+    margin: auto;
+    border: black solid 2px;
+    /*  " display:flex;" is used with parent container only */
+    display: flex;
+    /*  "flex-direction: row ;" and it can take value "row-reverse" also */
+    flex-direction: row;
+    /* "justify-content" take different values :
+    a) center
+    b) end 
+    c) flex-start
+    d) flex-end
+    e) baseline 
+    f) space-between
+    g) space-around
+    */
+    justify-content: space-around;
+    /*  "flex-wrap: wrap " will  move the contentsd from one row to another if there is no space left*/
+    flex-wrap: nowrap;
+}
+
+@media only screen and (min-width:200px) and (max-width:767px) {
+    .main3 {
+        width: 100%;
+        flex-direction: column;
+        /*  it can also take value "clumn-reverse" which reverse the 
+        order of box in mobile device */
+    }
+}
+
+.main4 {
+    padding: 10px;
+    width: 1170px;
+    height: 500px;
+    margin: auto;
+    border: black solid 2px;
+    /*  " display:flex;" is used with parent container only */
+    display: flex;
+    /*  "flex-direction: row ;" and it can take value "row-reverse" also */
+    flex-direction: row;
+    /* "justify-content" take different values :
+    a) center
+    b) end 
+    c) flex-start
+    d) flex-end
+    e) baseline 
+    f) space-between
+    g) space-around
+    */
+    justify-content: space-around;
+    /*  align-item takes different values:display:
+    flex-start
+    flex-end
+    center
+    baseline
+    stretch*/
+    align-items: center;
+    /*  "flex-wrap: wrap " will  move the contentsd from one row to another if there is no space left*/
+    flex-wrap: wrap;
+}
+
+@media only screen and (min-width:200px) and (max-width:767px) {
+    .main4 {
+        width: 100%;
+        flex-direction: column;
+        /*  it can also take value "clumn-reverse" which reverse the 
+        order of box in mobile device */
+    }
+}
+
+.main5 {
+    padding: 10px;
+    width: 1170px;
+    height: 500px;
+    margin: auto;
+    border: black solid 2px;
+    /*  " display:flex;" is used with parent container only */
+    display: flex;
+    /*  "flex-direction: row ;" and it can take value "row-reverse" also */
+    flex-direction: row;
+    /* "justify-content" take different values :
+    a) center
+    b) end 
+    c) flex-start
+    d) flex-end
+    e) baseline 
+    f) space-between
+    g) space-around
+    */
+    justify-content: space-around;
+    /*  align-content takes different values:y:
+    flex-start
+    flex-end
+    center
+    space-between
+    space-around
+    space-evenly
+    stretch
+     */
+    align-content: flex-end;
+    /*  "flex-wrap: wrap " will  move the contentsd from one row to another if there is no space left*/
+    flex-wrap: wrap;
+}
+
+@media only screen and (min-width:200px) and (max-width:767px) {
+    .main5 {
+        width: 100%;
+        flex-direction: column;
+        /*  it can also take value "clumn-reverse" which reverse the 
+        order of box in mobile device */
+    }
+}
+
+.main6 {
+    padding: 10px;
+    width: 1170px;
+    height: 500px;
+    margin: auto;
+    border: black solid 2px;
+    /*  " display:flex;" is used with parent container only */
+    display: flex;
+    /*  "flex-direction: row ;" and it can take value "row-reverse" also */
+    flex-direction: row;
+    /* "justify-content" take different values :
+    a) center
+    b) end 
+    c) flex-start
+    d) flex-end
+    e) baseline 
+    f) space-between
+    g) space-around
+    */
+    justify-content: space-around;
+    /*  align-content takes different values:y:
+    flex-start
+    flex-end
+    center
+    space-between
+    space-around
+    space-evenly
+    stretch
+     */
+    align-content: space-between;
+    /*  "flex-wrap: wrap " will  move the contentsd from one row to another if there is no space left*/
+    flex-wrap: wrap;
+}
+
+@media only screen and (min-width:200px) and (max-width:767px) {
+    .main6 {
+        width: 100%;
+        flex-direction: column;
+        /*  it can also take value "clumn-reverse" which reverse the 
+        order of box in mobile device */
+    }
+}
+
+.main7 {
+    padding: 10px;
+    width: 1170px;
+    margin: auto;
+    border: black solid 2px;
+    display: flex;
+    flex-direction: row;
+}
+
+.box5 {
+    /*  flex-shrink:0 will not let  width to shrink*/
+    flex-shrink: 3;
+    width: 1000px;
+    padding: 2px;
+    margin: 2px;
+    border: black solid 2px;
+    background-color: blueviolet;
+    /* flex-grow help to change the size  by ratio */
+    flex-grow: 4;
+}
+
+@media only screen and (min-width:200px) and (max-width:767px) {
+    .main7 {
+        width: 100%;
+        flex-direction: column;
+        /*  it can also take value "clumn-reverse" which reverse the 
+        order of box in mobile device */
+    }
+}
+
+.main8 {
+    padding: 10px;
+    width: 1170px;
+    height: 500px;
+    margin: auto;
+    border: black solid 2px;
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (min-width:200px) and (max-width:767px) {
+    .main8 {
+        width: 100%;
+        flex-direction: column;
+        /*  it can also take value "clumn-reverse" which reverse the 
+        order of box in mobile device */
+    }
+}
+
+.box6 {
+    align-self: flex-start;
+    width: 500px;
+    padding: 2px;
+    margin: 2px;
+    border: black solid 2px;
+    background-color: blueviolet;
+}
+
+.box7 {
+    align-self: center;
+    width: 500px;
+    padding: 2px;
+    margin: 2px;
+    border: black solid 2px;
+    background-color: blueviolet;
+}
+
+.box8 {
+    align-self: baseline;
+    width: 500px;
+    padding: 2px;
+    margin: 2px;
+    border: black solid 2px;
+    background-color: blueviolet;
+}
+
+.box9 {
+    align-self: flex-end;
+    width: 500px;
+    padding: 2px;
+    margin: 2px;
+    border: black solid 2px;
+    background-color: blueviolet;
+}
